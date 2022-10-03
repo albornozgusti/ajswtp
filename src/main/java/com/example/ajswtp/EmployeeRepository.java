@@ -1,4 +1,4 @@
 package com.example.ajswtp;
 
-public interface EmloyeeRepository {
+public interface EmployeeRepository {
 }
