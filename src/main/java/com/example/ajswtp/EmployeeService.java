@@ -8,7 +8,7 @@ import java.util.List;
 @Service
 public class EmployeeService {
 
-    private final EmloyeeRepository repository;
+    private final EmployeeRepository repository;
 
     @Autowired
     EmployeeService(EmployeeRepository employeeRepository){
@@ -45,6 +45,6 @@ public class EmployeeService {
                 .orElseGet(() -> {
                     newEmployee.setId(id);
                     return repository.save(newEmployee);
-                })
+                });
     }
 }
