@@ -28,7 +28,7 @@ public class EmployeeController {
 
     @GetMapping("/employees/{id}")
     Employee one(@PathVariable Long id){
-        return employeeService.findById(id)
+        return employeeService.findById(id);
     }
 
     @PutMapping("/employees/{id}")
