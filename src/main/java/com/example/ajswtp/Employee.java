@@ -1,26 +1,18 @@
 package com.example.ajswtp;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Employee {
 
     private String name;
     private String role;
     private Long id;
 
-    public Employee(String name, String role, Long id){
-        this.name = name;
-        this.role = role;
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getRole() {
-        return role;
-    }
 }

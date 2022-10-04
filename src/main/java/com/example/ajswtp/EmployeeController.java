@@ -28,7 +28,7 @@ public class EmployeeController {
     //single item
 
     @GetMapping(path="/employees/{id}")
-    Employee one(@PathVariable Long id){
+    Employee one(@PathVariable Long id) throws EmployeeNotFoundException {
         return employeeService.findById(id);
     }
 
@@ -38,7 +38,7 @@ public class EmployeeController {
     }
 
     @DeleteMapping(path="/employees/{id}")
-    void deleteEmployee(@PathVarible Long id){
+    void deleteEmployee(@PathVariable("id")Long id){
         employeeService.deleteById(id);
     }
 }
