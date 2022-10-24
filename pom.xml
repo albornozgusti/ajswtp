@@ -111,6 +111,12 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- From unajDev clase 5 hibernate-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.6.Final</version>
+        </dependency>
     </dependencies>
 
     <build>
