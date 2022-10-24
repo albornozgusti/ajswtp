@@ -1,4 +1,4 @@
-package com.example.ajswtp;
+package com.example.ajswtp.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

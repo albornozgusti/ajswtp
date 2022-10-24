@@ -1,5 +1,6 @@
 package com.example.ajswtp;
 
+import com.example.ajswtp.entity.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,5 +1,8 @@
-package com.example.ajswtp;
+package com.example.ajswtp.services;
 
+import com.example.ajswtp.EmployeeNotFoundException;
+import com.example.ajswtp.EmployeeRepository;
+import com.example.ajswtp.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,7 +27,7 @@ public class EmployeeService {
         return repository.save(newEmployee);
     }
 
-    public <T> Employee findById(Long id) throws  EmployeeNotFoundException{
+    public <T> Employee findById(Long id) throws EmployeeNotFoundException {
         return  repository.findById(id)
                 .orElseThrow(()-> new EmployeeNotFoundException(id));
     }
